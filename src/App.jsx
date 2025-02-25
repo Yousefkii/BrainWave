@@ -1,12 +1,13 @@
+import ButtonGradient from "./assets (2)/assets/svg/ButtonGradient"
+import Buttons from "./components/Buttons"
+import Header from "./components/Header"
 
 function App() {
 
   return (
     <>
-      <p className="text-amber-50">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, magnam, cum aut dolorum numquam maxime ad, aliquam voluptatem facilis rem facere? Quo iure excepturi porro numquam quam, ea d
-        
-      </p>
+      <Header></Header>
+      <ButtonGradient/>
     </>
   )
 }
