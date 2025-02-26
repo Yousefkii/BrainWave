@@ -1,15 +1,18 @@
-import ButtonGradient from "./assets (2)/assets/svg/ButtonGradient"
-import Buttons from "./components/Buttons"
+import ButtonGradient from "./assets/svg/ButtonGradient"
 import Header from "./components/Header"
+import Hero from "./components/Hero"
 
 function App() {
 
   return (
     <>
-      <Header></Header>
+    <div className="pt-[4.75 rem] lg:pt-[5.25rem] pg-black overflow-hidden">
+      <Header/>
+      <Hero/>
+      </div>
       <ButtonGradient/>
     </>
-  )
+  ) 
 }
 
 export default App
