@@ -1,9 +1,9 @@
 import React from 'react'
-import ButtonSvg from "../assets (2)/assets/svg/ButtonSvg"
+import ButtonSvg from "../assets/svg/ButtonSvg"
 
 const Buttons = ({className,href,onClick,children,px,white}) => {
 
-   const classes = `button relative jsutify-center infline-flex items-center h-11 transition-colors hover:text-color-white ${className } ${px || "px-7"}`
+   const classes = ` button relative jsutify-center inline-flex items-center h-11 transition-colors hover:text-color-white ${white ? "text-black" : "text-white"} ${className } ${px || "px-7"}`
 
    const spanclasses = 'relative z-10'
 
@@ -15,8 +15,8 @@ const Buttons = ({className,href,onClick,children,px,white}) => {
   )
 
   const renderLink= () =>(
-     <a className={classes} href={href}>
-        <span className={spanclasses}>{children}</span>
+     <a className={classes} href={href} >
+        <span className={spanclasses }>{children}</span>
         {ButtonSvg(white)}
      </a>
   ) 
