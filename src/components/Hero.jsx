@@ -3,9 +3,12 @@ import Section from './section.jsx'
 import { curve, heroBackground, robot } from '../assets'
 import Buttons from './Button.jsx'
 import { ScrollParallax } from 'react-just-parallax'
-import {BottomLine} from './design/design/Hero.jsx';
+import {BackgroundCircles, BottomLine, Gradient} from './design/design/Hero.jsx';
 import { heroIcons } from './constants/index.js'
 import { Form } from 'react-router-dom'
+import Generating from './Generating.jsx'
+import Notification from './Notification.jsx'
+import CompanyLogos from './CompanyLogos.jsx'
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -15,7 +18,7 @@ const Hero = () => {
     <div className='container relative lg:w-full xl:w-full' ref={parallaxRef}>
     <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className='h1 mb-6 '>
-            Explore the possibilities of AI Chatting with Brainwave
+            Explore the possibilities of AI Chatting with
             <span className="inline-block relative">
               Brainwave{" "}
               <img
@@ -27,7 +30,7 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className='body-1 max-w-3xl mx:auto mb-6 text-#CAC6DD  lg:mb-8'>
+          <p className='body-1  mx:auto mb-6 text-#CAC6DD  lg:mb-8 text-center'>
             unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave. The open AI chat app
           </p>
           <Buttons href="/pricing" white >
@@ -46,6 +49,8 @@ const Hero = () => {
                   height={490}
                   alt="AI"
                 />
+                <Generating className='absolute left-4 right-4 bottom-5 md:left-1/4 md:right-auto md:bottom-8 md:w-[31rem] md:-trnaslate-x-1/2'/>
+                
                 <ScrollParallax isAbsolutelyPositioned>
                   <ul className='hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-#474060/40 backdrop-blur border border-white/10 rounded-2xl xl:flex'>
                     {heroIcons.map((icon,index)=>(
@@ -54,21 +59,34 @@ const Hero = () => {
                       </li>
                     ))}
                   </ul>
+                  
+                </ScrollParallax>
+                <ScrollParallax isAbsolutelyPositioned>
+                  <Notification className='hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex' title="Code generation"/>
                 </ScrollParallax>
             </div>
+           
            </div>
+           
           </div>
           </div>
+          <Gradient/>
     </div>
-    <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+    
+    <div className="absolute -top-[14%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] ">
+    
             <img
               src={heroBackground}
               className="w-full"
               width={1440}
-              height={1800}
+              height={2000}
               alt="hero"
             />
+            
     </div>
+    <CompanyLogos className='hidden relative z-10 mt-20 lg:block'/>
+    <BackgroundCircles/>
+    <BottomLine/>
     </Section>
 )
 }
