@@ -3,7 +3,7 @@ import { companyLogos } from './constants'
 
 const CompanyLogos = ({className}) => {
   return (
-    <div className={className}>companyLogos
+    <div className={className}>
     <h5 className='tagline mb-6 text-center text-white/50'>
         Helping peapole create beatiful content at
     </h5>
