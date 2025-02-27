@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Section from './section.jsx'
+import Section from './Section.jsx'
 import { curve, heroBackground, robot } from '../assets'
 import Buttons from './Button.jsx'
 import { ScrollParallax } from 'react-just-parallax'
@@ -44,7 +44,7 @@ const Hero = () => {
               <div className=" aspect-[33/40] rounded-[1rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={robot}
-                  className="w-full scale-[1.7] translate-y-[1%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
+                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
                   width={1024}
                   height={490}
                   alt="AI"
@@ -73,7 +73,7 @@ const Hero = () => {
           <Gradient/>
     </div>
     
-    <div className="absolute -top-[14%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] ">
+    <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] ">
     
             <img
               src={heroBackground}
