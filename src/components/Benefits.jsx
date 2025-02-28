@@ -4,7 +4,7 @@ import Heading from './Heading'
 import { benefits } from './constants'
 import Arrow from '../assets/svg/Arrow'
 import {GradientLight} from './design/design/Benefits.jsx'
-import clipPath from '../assets/svg/ClipPath.jsx'
+import ClipPath from '../assets/svg/ClipPath.jsx'
 import { heroBackground } from '../assets'
 
 const Benefits = () => {
@@ -34,7 +34,7 @@ const Benefits = () => {
 
                     {item.light && <GradientLight/>}
 
-                    <div className='absolute inset-0.5 bg-#0E0C15' style={{clipPath:"url(#benefits)"}}>
+                    <div className='absolute inset-0.5 bg-#0E0C15' style={{ClipPath:"url(#benefits)"}}>
 
                     <div className='absolute inset-0 opacity-0 transition-opacity hover:opacity-10'>
                       {item.imageUrl && (
