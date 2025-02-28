@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Section from './Section'
 import { collabApps, collabContent, collabText } from './constants'
 import { brainwaveSymbol, check } from '../assets'

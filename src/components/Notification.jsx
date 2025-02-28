@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { notificationImages } from './constants'
 import { notification1 } from '../assets'
 
