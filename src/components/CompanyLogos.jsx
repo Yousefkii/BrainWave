@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { companyLogos } from './constants'
 
 const CompanyLogos = ({className}) => {
