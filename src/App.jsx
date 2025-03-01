@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Services from "./components/Services.jsx"
 import Pricing from './components/Pricing.jsx'
+import RoadMap from "./components/RoadMap.jsx"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Collaboration/>
       <Services/>
       <Pricing/>
+      <RoadMap/>
       </div>
       <ButtonGradient/>
     </>
