@@ -6,6 +6,7 @@ import Hero from "./components/Hero"
 import Services from "./components/Services.jsx"
 import Pricing from './components/Pricing.jsx'
 import RoadMap from "./components/RoadMap.jsx"
+import Footer from "./components/Footer.jsx"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Services/>
       <Pricing/>
       <RoadMap/>
+      <Footer/>
       </div>
       <ButtonGradient/>
     </>
