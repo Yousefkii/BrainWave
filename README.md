@@ -1,8 +1,7 @@
-# React + Vite
+# Brainwave AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive user-friendly AI website Created Using React, JavaScript and Tailwind.
+Consists of multible sections with reuseable components like <Button> and <Section>.
+Merging animation and SVGs to meet the market's evolving and direction towards the creative websites that uses animations and 3D 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
